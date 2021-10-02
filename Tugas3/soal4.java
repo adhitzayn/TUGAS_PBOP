@@ -6,7 +6,7 @@ public class soal4 {
         Scanner keyboard = new Scanner(System.in);
         penjualan = keyboard.nextInt();
         double bonus;
-        int gajiPokok = 500000;
+        final int gajiPokok = 500000;
         double totalGaji;
         int item = 50000;
         //int totalItem = (int) bonus *item;
@@ -25,8 +25,8 @@ public class soal4 {
             totalGaji = (float) gajiPokok + bonus;
             System.out.println("Total gaji kamu : " + totalGaji);
         }
-        else{
-            double potongan = (int) item*penjualan*0.15;
+        else if (penjualan<15){
+            double potongan = (int) (15 - penjualan)*0.15*item;
             totalGaji = (float) gajiPokok - potongan;
             System.out.println("Total gaji kamu : " + totalGaji);
         }

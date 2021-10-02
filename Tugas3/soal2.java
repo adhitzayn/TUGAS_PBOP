@@ -8,7 +8,9 @@ public class soal2 {
         {
             String s1=keyboard.next();
             int x=keyboard.nextInt();
+            System.out.println("=========================");
             System.out.printf("%-15s%03d%n",s1,x);
+            System.out.println("=========================");
         }
     }
     

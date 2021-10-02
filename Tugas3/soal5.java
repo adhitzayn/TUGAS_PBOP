@@ -12,11 +12,8 @@ public class soal5 {
         
         String gabunganPlat = String.valueOf(plat1 + plat2 + plat3 + plat4);
         long number = Long.parseLong(gabunganPlat);
-        //System.out.println("Ini number perselong : " +number);
         long putusan = number - 999999;
         byte modulo = (byte) (putusan % 5);
-        //System.out.println("ini putusan : " + putusan);
-        //System.out.println("ini modulo : " + modulo);
         if(modulo == 0){
             System.out.println("berhenti");
         }

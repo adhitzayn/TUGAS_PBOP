@@ -1,4 +1,8 @@
 package pbo3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 public class soal7 {
     public static void main(String[] args) {
         
@@ -23,7 +27,18 @@ public class soal7 {
         {{10 11 12} {13 14 15} {16 17 18}}
         {{19 20 21} {22 23 24} {25 26 27}}
         */
-        System.out.println(threeDimensionalArray);
+        for(int[][] array3d : threeDimensionalArray){
+            System.out.print("{");
+            for(int[] array2d : array3d){
+                System.out.print("{");
+                for(int array : array2d){
+                    System.out.print(array + " ");
+                }
+                System.out.print("}");
+            }
+            System.out.print("}");
+            System.out.println();
+        }
     }
     
 }
